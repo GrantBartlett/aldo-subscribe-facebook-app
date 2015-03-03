@@ -1,7 +1,7 @@
 module.exports = function (grunt) {
 
     var js_src_files = [
-        'assets/js/*.js'
+        'src/js/*.js'
     ];
 
     // Project configuration.
@@ -36,16 +36,16 @@ module.exports = function (grunt) {
         less: {
             dev: {
                 options: {
-                    paths: ["assets/css"],
+                    paths: ["src/css"],
                     compress: false
                 },
                 files: {
-                    "dist/css/main.css": "assets/less/main.less"
+                    "dist/css/main.css": "src/less/main.less"
                 }
             },
             build: {
                 options: {
-                    paths: ["assets/css"],
+                    paths: ["src/css"],
 
                     modifyVars: {
                         imgPath: '"dist/images/"',
@@ -54,7 +54,7 @@ module.exports = function (grunt) {
                     compress: true
                 },
                 files: {
-                    "dist/css/main.min.css": "assets/less/main.less"
+                    "dist/css/main.min.css": "src/less/main.less"
                 }
             }
         },
@@ -69,12 +69,12 @@ module.exports = function (grunt) {
 
             },
             scripts: {
-                files: 'assets/js/*.js',
+                files: 'src/js/*.js',
                 tasks: ['concurrent:compress']
             },
 
             css: {
-                files: 'assets/*/*.less',
+                files: 'src/*/*.less',
                 tasks: ['concurrent:compress']
             }
         },
