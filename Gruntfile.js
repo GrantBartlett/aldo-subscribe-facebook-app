@@ -63,10 +63,8 @@ module.exports = function (grunt) {
             options: {
                 dateFormat: function (time) {
                     grunt.log.writeln('Finished watching in ' + time + ' ms at' + (new Date()).toString());
-                    grunt.log.writeln('Waiting...');
                 },
                 livereload: true
-
             },
             scripts: {
                 files: 'src/js/*.js',
@@ -99,6 +97,3 @@ module.exports = function (grunt) {
     // Default task(s).
     grunt.registerTask('default', ['concurrent']);
 };
-
-
-
