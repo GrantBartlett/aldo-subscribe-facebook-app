@@ -1,4 +1,4 @@
-## Synopsis
+## Aldo Email Subscribe Application
 
 Facebook application for Aldo Shoes - Saudi Arabia. The aim is to collect emails utilising campaign monitor.
 
