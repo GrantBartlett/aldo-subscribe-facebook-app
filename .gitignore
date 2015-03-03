@@ -1,1 +1,9 @@
 .idea/
+.gitignore/
+node_modules/
+
+dist/js/*.js
+!dist/js/*.min.js
+
+dist/css/*.css
+!dist/css/*.min.css
