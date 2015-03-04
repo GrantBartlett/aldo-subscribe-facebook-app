@@ -1,1 +1,76 @@
-@import "bootstrap";  // Import bootstrap
+@import "bootstrap";
+// Import bootstrap
+@import "variables";
+// Custom variables
+@import "fonts";
+// Custom fonts
+@import "forms";
+// Custom forms
+@import "buttons";
+
+// Custom buttons
+
+html, body {
+  letter-spacing: 2px;
+}
+
+.logo, .form {
+  background: #fff;
+}
+
+.main section {
+  padding: 10px;
+}
+
+.intro {
+  padding-top: 0!important;
+  h1 {
+    font-size: 42px;
+    margin-bottom: 2px;
+  }
+}
+
+.description {
+  letter-spacing: normal;
+  font-size: 16px;
+  color: lighten(@brand-secondary, 35%);
+}
+
+.email-icon {
+  position: relative;
+}
+
+.spin {
+  -webkit-animation: spin 15s linear infinite;
+  -moz-animation: spin 15s linear infinite;
+  animation: spin 15s linear infinite;
+}
+
+.still {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin-top: 20px;
+}
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
