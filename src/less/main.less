@@ -1,19 +1,23 @@
-@import "bootstrap";  // Import bootstrap
-@import "variables";  // Custom variables
-@import "fonts";      // Custom fonts
-@import "forms";      // Custom forms
-@import "buttons";    // Custom buttons
+@import "bootstrap"; // Import bootstrap
+@import "variables"; // Custom variables
+@import "fonts"; // Custom fonts
+@import "forms"; // Custom forms
+@import "buttons";  // Custom buttons
 
 html, body {
+  background-color: @brand-grey;
   letter-spacing: 2px;
 }
 
 .logo, .form {
-  background: #fff;
+  background: @brand-white;
 }
 
-.main section {
-  padding: 10px;
+.main {
+  background: @brand-white;
+  section {
+    padding: 10px;
+  }
 }
 
 .intro {
