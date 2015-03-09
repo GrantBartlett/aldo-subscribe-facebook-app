@@ -11,4 +11,4 @@ BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
 
 <ifmodule mod_headers.c>
   AddDefaultCharset UTF-8
-</ifmodule>GUT
+</ifmodule>
