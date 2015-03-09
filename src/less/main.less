@@ -5,23 +5,46 @@
 @import "buttons";  // Custom buttons
 
 html, body {
-  background-color: @brand-grey;
+  background: url('../images/bgpattern.png') repeat;
   letter-spacing: 2px;
 }
 
-.logo, .form {
+.logo {
   background: @brand-white;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.form {
+  background: @brand-white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  button {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
 }
 
 .main {
   background: @brand-white;
-  section {
-    padding: 10px;
+  padding: 0 15px 15px;
+}
+
+footer {
+  a {
+    color: @brand-secondary;
+    letter-spacing: 0;
   }
 }
 
+p {
+  margin: 0 0 20px;
+}
+
 .intro {
-  padding-top: 0 !important;
+  padding-top: 5px;
+  padding-bottom: 5px;
   h1 {
     font-size: 42px;
     margin-bottom: 2px;
@@ -35,6 +58,8 @@ html, body {
 }
 
 .email-icon {
+  margin-top: 5px;
+  margin-bottom: 5px;
   position: relative;
 }
 
@@ -51,7 +76,6 @@ html, body {
   left: 0;
   right: 0;
   top: 0;
-  margin-top: 20px;
 }
 
 @-moz-keyframes spin {
