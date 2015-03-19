@@ -8,7 +8,7 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -38,6 +38,7 @@
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries --><!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+	<script src="dist/js/app.min.js"></script>
 </head>
 <body <?php if($locale->getLanguage() == 'ar_AR') echo 'class="rtl"';?>>
 
@@ -74,15 +75,18 @@
                                 <form action="https://smswmedia.createsend.com/t/d/s/iljdlk/" method="post">
                                     <div class="row">
                                         <div class="form-group col-sm-6 col-md-6">
-                                            <input id="fieldjyurdy" name="cm-f-jyurdy" type="text" class="form-control first-name" placeholder="<?php echo $string['form']['firstName']; ?>">
+                                            <label for="fieldjyurdy" class="label-support"><?php echo $string['form']['firstName']; ?></label>
+                                            <input id="fieldjyurdy" name="cm-f-jyurdy" type="text" class="form-control first-name" placeholder="<?php echo $string['form']['firstName']; ?>" required>
                                         </div>
                                         <div class="form-group col-sm-6 col-md-6">
+	                                        <label for="fieldjyurdj" class="label-support"><?php echo $string['form']['lastName']; ?></label>
                                             <input id="fieldjyurdj" name="cm-f-jyurdj" type="text" class="form-control last-name" placeholder="<?php echo $string['form']['lastName']; ?>">
                                         </div>
                                     </div>
 
                                     <div class="form-group row">
                                         <div class="col-md-12">
+                                            <label for="fieldEmail" class="label-support"><?php echo $string['form']['email']; ?></label>
                                             <input type="email" id="fieldEmail" name="cm-iljdlk-iljdlk" class="form-control" placeholder="<?php echo $string['form']['email']; ?>" required/>
                                         </div>
                                     </div>
