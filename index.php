@@ -74,7 +74,7 @@
                                 <form action="https://smswmedia.createsend.com/t/d/s/iljdlk/" method="post">
                                     <div class="row">
                                         <div class="form-group col-sm-6 col-md-6">
-                                            <input id="fieldjyurdy" name="cm-f-jyurdy" type="text" class="form-control first-name" placeholder="<?php echo $string['form']['firstName']; ?>" autofocus>
+                                            <input id="fieldjyurdy" name="cm-f-jyurdy" type="text" class="form-control first-name" placeholder="<?php echo $string['form']['firstName']; ?>">
                                         </div>
                                         <div class="form-group col-sm-6 col-md-6">
                                             <input id="fieldjyurdj" name="cm-f-jyurdj" type="text" class="form-control last-name" placeholder="<?php echo $string['form']['lastName']; ?>">
