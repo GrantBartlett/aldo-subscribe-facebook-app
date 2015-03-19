@@ -74,10 +74,10 @@
                                 <form action="https://smswmedia.createsend.com/t/d/s/iljdlk/" method="post">
                                     <div class="row">
                                         <div class="form-group col-sm-6 col-md-6">
-                                            <input id="fieldjyurdy" name="cm-f-jyurdy" type="text" class="form-control" placeholder="<?php echo $string['form']['firstName']; ?>" autofocus>
+                                            <input id="fieldjyurdy" name="cm-f-jyurdy" type="text" class="form-control first-name" placeholder="<?php echo $string['form']['firstName']; ?>" autofocus>
                                         </div>
                                         <div class="form-group col-sm-6 col-md-6">
-                                            <input id="fieldjyurdj" name="cm-f-jyurdj" type="text" class="form-control" placeholder="<?php echo $string['form']['lastName']; ?>">
+                                            <input id="fieldjyurdj" name="cm-f-jyurdj" type="text" class="form-control last-name" placeholder="<?php echo $string['form']['lastName']; ?>">
                                         </div>
                                     </div>
 
@@ -99,10 +99,11 @@
                     </section>
 
                     <footer class="footer text-center">
-                        <p>
-                            <a href="#" title="">Terms and conditions</a>,
-                            <a href="#" role="button" data-toggle="modal" data-target="#privacyPolicy">Privacy Policy</a>
-                        </p>
+	                    <p>
+	                        <a href="<?php echo $string['footer']['privacy']['url']; ?>" title="<?php echo $string['footer']['privacy']['text']; ?>">
+	                            <?php echo $string['footer']['privacy']['text']; ?>
+	                        </a>
+	                    </p>
                     </footer>
 	                <?php endforeach; ?>
 
