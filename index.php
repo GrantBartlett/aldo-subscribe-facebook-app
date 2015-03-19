@@ -39,7 +39,7 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
 </head>
-<body>
+<body <?php if($locale->getLanguage() == 'ar_AR') echo 'class="rtl"';?>>
 
 <div class="container">
     <section class="app" role="main">
