@@ -1,5 +1,11 @@
 <?php require_once('_include/Language.php');?>
-<?php $lang = new Language(); ?>
+<?php require_once('_include/Strings.php');?>
+<?php
+	$locale = new Language();
+	$strings = new Strings();
+	$contentArr = $strings->getStrings();
+	$contentArr = $contentArr[$locale->getLanguage()];
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -35,8 +41,6 @@
 </head>
 <body>
 
-
-
 <div class="container">
     <section class="app" role="main">
         <div class="row header">
@@ -52,14 +56,55 @@
                         <img src="dist/images/email.png" class="center-block still" alt="Email icon" width="63" height="63">
                     </section>
 
-	                <?php
-	                if ( $lang->getLanguage() == 'ar_AR' ) {
-		                include_once( '_partials/arabic.php' );
-	                }
-	                elseif ( $lang->getLanguage() == 'en_GB' ) {
-	                    include_once( '_partials/english.php' );
-	                }
-	                ?>
+	                <?php foreach($contentArr as $string): ?>
+                    <section class="intro text-center">
+                        <h1 class="text-uppercase"><?php echo $string['intro']['headline']; ?></h1>
+
+                        <p class="lead"><?php echo $string['intro']['lead']; ?></p>
+
+                        <p class="description">
+                            <?php echo $string['intro']['description']; ?>
+                        </p>
+                    </section>
+
+                    <section class="form">
+                        <div class="row">
+                            <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+
+                                <form action="https://smswmedia.createsend.com/t/d/s/iljdlk/" method="post">
+                                    <div class="row">
+                                        <div class="form-group col-sm-6 col-md-6">
+                                            <input id="fieldjyurdy" name="cm-f-jyurdy" type="text" class="form-control" placeholder="<?php echo $string['form']['firstName']; ?>" autofocus>
+                                        </div>
+                                        <div class="form-group col-sm-6 col-md-6">
+                                            <input id="fieldjyurdj" name="cm-f-jyurdj" type="text" class="form-control" placeholder="<?php echo $string['form']['lastName']; ?>">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <div class="col-md-12">
+                                            <input type="email" id="fieldEmail" name="cm-iljdlk-iljdlk" class="form-control" placeholder="<?php echo $string['form']['email']; ?>" required/>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <div class="col-md-6 col-md-offset-3 text-center">
+                                            <button class="btn btn-default btn-block btn-lg btn-primary text-uppercase" type="submit"><?php echo $string['form']['submit']; ?></button>
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <footer class="footer text-center">
+                        <p>
+                            <a href="#" title="">Terms and conditions</a>,
+                            <a href="#" role="button" data-toggle="modal" data-target="#privacyPolicy">Privacy Policy</a>
+                        </p>
+                    </footer>
+	                <?php endforeach; ?>
 
                 </div>
             </div>

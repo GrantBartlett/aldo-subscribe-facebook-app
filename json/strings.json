@@ -1,0 +1,40 @@
+{
+  "en_GB": [
+    {
+      "intro": {
+        "headline": "Hey You",
+        "lead": "We've been waiting!",
+        "description": "Don't miss out for a single second longer.<br class=\"hidden-xs\"> Promotions, contests, style guides and more, coming your way..."
+      },
+      "form": {
+        "firstName": "first name",
+        "lastName": "last name",
+        "email": "email",
+        "submit": "I'm In"
+      },
+      "footer": {
+        "terms": "Terms and Conditions",
+        "privacy": "Privacy Policy"
+      }
+    }
+  ],
+  "ar_AR": [
+    {
+      "intro": {
+        "headline": "مهلا!",
+        "lead": "كنا بالإنتظار!",
+        "description": "لا تفوتوا لحظة واحدة بعد<br class=\"hidden-xs\"> حملات ترويجية، مسابقات، دليل في الموضة وأكثر في الطريق إليكم"
+      },
+      "form": {
+        "firstName": "الاسم الأول",
+        "lastName": "اسم العائلة",
+        "email": "البريد الإلكتروني",
+        "submit": "شاركت!"
+      },
+      "footer": {
+        "terms": "الشروط والأحكام",
+        "privacy": "نهج الخصوصية"
+      }
+    }
+  ]
+}

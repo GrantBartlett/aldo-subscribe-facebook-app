@@ -6,14 +6,16 @@ class Language {
 	 *
 	 */
 	public function setLanguage() {
-		$signed_request = $_REQUEST['signed_request'];
+
+		if ( ! empty( $_REQUEST['signed_request'] ) ) {
+			$signed_request = $this;
+		}
 
 		if ( isset( $signed_request ) ) {
 			$data_signed_request = explode( '.', $signed_request ); // Get the part of the signed_request we need.
 			$jsonData = base64_decode( $data_signed_request['1'] ); // Base64 Decode signed_request making it JSON.
-			$objData = json_decode( $jsonData, true ); // Split the JSON into arrays.
-			$userlocale = $objData['user']['locale'];
-			return $userlocale;
+			$objData  = json_decode( $jsonData, true ); // Split the JSON into arrays.
+			return $objData['user']['locale'];
 		}
 	}
 
@@ -32,7 +34,8 @@ class Language {
 				return $language;
 				break;
 
-			default :
+			default  :
+				return "en_GB";
 				break;
 		}
 	}
