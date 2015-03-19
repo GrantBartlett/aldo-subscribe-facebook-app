@@ -11,39 +11,6 @@ html, body {
   letter-spacing: 0.07em;
 }
 
-.rtl {
-  direction: rtl;
-
-  // Firstname field needs to come first
-  .first-name {
-    float: right;
-  }
-  .last-name {
-    float: left;
-  }
-
-  // Spin the other way when rtl
-  @-moz-keyframes spin {
-    100% {
-      -moz-transform: rotate(-360deg);
-    }
-  }
-
-  @-webkit-keyframes spin {
-    100% {
-      -webkit-transform: rotate(-360deg);
-    }
-  }
-
-  @keyframes spin {
-    100% {
-      -webkit-transform: rotate(-360deg);
-      transform: rotate(-360deg);
-    }
-  }
-
-}
-
 .app {
   padding: 50px 0 50px 0;
 
@@ -144,6 +111,37 @@ html, body {
       transform: rotate(360deg);
     }
   }
+}
 
+.rtl {
+  direction: rtl;
+
+  // Firstname field needs to come first
+  .first-name {
+    float: right;
+  }
+  .last-name {
+    float: left;
+  }
+
+  // Spin the other way when rtl
+  @-moz-keyframes spin {
+    100% {
+      -moz-transform: rotate(-360deg);
+    }
+  }
+
+  @-webkit-keyframes spin {
+    100% {
+      -webkit-transform: rotate(-360deg);
+    }
+  }
+
+  @keyframes spin {
+    100% {
+      -webkit-transform: rotate(-360deg);
+      transform: rotate(-360deg);
+    }
+  }
 }
 
