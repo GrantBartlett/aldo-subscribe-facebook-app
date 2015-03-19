@@ -13,8 +13,6 @@ class Language {
 			$jsonData = base64_decode( $data_signed_request['1'] ); // Base64 Decode signed_request making it JSON.
 			$objData = json_decode( $jsonData, true ); // Split the JSON into arrays.
 			$userlocale = $objData['user']['locale'];
-			print_r( $userlocale );
-
 			return $userlocale;
 		}
 	}
