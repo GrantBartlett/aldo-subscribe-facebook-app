@@ -8,7 +8,7 @@ class Language {
 	public function setLanguage() {
 
 		if ( ! empty( $_REQUEST['signed_request'] ) ) {
-			$signed_request = $this;
+			$signed_request = $_REQUEST['signed_request'];
 		}
 
 		if ( isset( $signed_request ) ) {
