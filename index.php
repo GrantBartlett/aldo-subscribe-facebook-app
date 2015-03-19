@@ -1,10 +1,10 @@
 <?php require_once('_include/Language.php');?>
 <?php require_once('_include/Strings.php');?>
 <?php
-	$locale = new Language();
-	$strings = new Strings();
-	$contentArr = $strings->getStrings();
-	$contentArr = $contentArr[$locale->getLanguage()];
+    $locale = new Language();
+    $strings = new Strings();
+    $contentArr = $strings->getStrings();
+    $contentArr = $contentArr[$locale->getLanguage()];
 ?>
 
 <!DOCTYPE html>
@@ -39,7 +39,7 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
 </head>
-<body class="rtl" <?php if($locale->getLanguage() == 'ar_AR') echo 'class="rtl"';?>>
+<body <?php if($locale->getLanguage() == 'ar_AR') echo 'class="rtl"';?>>
 
 <div class="container">
     <section class="app" role="main">
@@ -56,7 +56,7 @@
                         <img src="dist/images/email.png" class="center-block still" alt="Email icon" width="63" height="63">
                     </section>
 
-	                <?php foreach($contentArr as $string): ?>
+                    <?php foreach($contentArr as $string): ?>
                     <section class="intro text-center">
                         <h1 class="text-uppercase"><?php echo $string['intro']['headline']; ?></h1>
 
@@ -99,13 +99,13 @@
                     </section>
 
                     <footer class="footer text-center">
-	                    <p>
-	                        <a href="<?php echo $string['footer']['privacy']['url']; ?>" title="<?php echo $string['footer']['privacy']['text']; ?>">
-	                            <?php echo $string['footer']['privacy']['text']; ?>
-	                        </a>
-	                    </p>
+                        <p>
+                            <a href="<?php echo $string['footer']['privacy']['url']; ?>" title="<?php echo $string['footer']['privacy']['text']; ?>">
+                                <?php echo $string['footer']['privacy']['text']; ?>
+                            </a>
+                        </p>
                     </footer>
-	                <?php endforeach; ?>
+                    <?php endforeach; ?>
 
                 </div>
             </div>
