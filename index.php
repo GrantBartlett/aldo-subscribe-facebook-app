@@ -1,4 +1,6 @@
 <?php require_once('_include/Language.php');?>
+<?php $lang = new Language(); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,7 +35,7 @@
 </head>
 <body>
 
-<?php $lang = new Language(); ?>
+
 
 <div class="container">
     <section class="app" role="main">
@@ -50,7 +52,7 @@
                         <img src="dist/images/email.png" class="center-block still" alt="Email icon" width="63" height="63">
                     </section>
 
-	                <?php if($lang->getLanguage() == 'ar'):?>
+	                <?php if($lang->getLanguage() == 'ar_AR'):?>
 	                Insert some arabic content here...
 	                <?php endif; ?>
 
