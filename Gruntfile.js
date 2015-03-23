@@ -1,7 +1,6 @@
 module.exports = function (grunt) {
 
     var js_src_files = [
-        'src/components/jquery/dist/jquery.min.js',
         'src/components/jquery-placeholder/jquery.placeholder.min.js',
         'src/js/*.js'
     ];
