@@ -102,7 +102,7 @@
 
                     <footer class="footer text-center">
                         <p>
-                            <a href="<?php echo $string['footer']['privacy']['url']; ?>" title="<?php echo $string['footer']['privacy']['text']; ?>">
+                            <a href="<?php echo $string['footer']['privacy']['url']; ?>" title="<?php echo $string['footer']['privacy']['text']; ?>" target="_blank">
                                 <?php echo $string['footer']['privacy']['text']; ?>
                             </a>
                         </p>
