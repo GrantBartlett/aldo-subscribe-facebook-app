@@ -114,7 +114,7 @@
         </div>
     </section>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
 <script src="dist/js/app.min.js" type="text/javascript"></script>
 </body>
 </html>
