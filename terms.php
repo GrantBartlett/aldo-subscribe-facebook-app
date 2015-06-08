@@ -59,56 +59,18 @@
                     </section>
 
                     <?php foreach($contentArr as $string): ?>
-                    <section class="intro text-center">
-                        <h1 class="text-uppercase"><?php echo $string['intro']['headline']; ?></h1>
-
-                        <p class="lead"><?php echo $string['intro']['lead']; ?></p>
-
-                        <p class="description">
-                            <?php echo $string['intro']['description']; ?>
-                        </p>
-                    </section>
 
                     <section class="form">
                         <div class="row">
-                            <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-
-                                <form action="https://smswmedia.createsend.com/t/d/s/iljdlk/" method="post">
-                                    <div class="row">
-                                        <div class="form-group col-sm-6 col-md-6">
-                                            <input id="fieldjyurdy" name="cm-f-jyurdy" type="text" class="form-control first-name" placeholder="<?php echo $string['form']['firstName']; ?>" required>
-                                        </div>
-                                        <div class="form-group col-sm-6 col-md-6">
-                                            <input id="fieldjyurdj" name="cm-f-jyurdj" type="text" class="form-control last-name" placeholder="<?php echo $string['form']['lastName']; ?>">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group row">
-                                        <div class="col-md-12">
-                                            <input type="email" id="fieldEmail" name="cm-iljdlk-iljdlk" class="form-control" placeholder="<?php echo $string['form']['email']; ?>" required/>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group row">
-                                        <div class="col-md-6 col-md-offset-3 text-center">
-                                            <button class="btn btn-default btn-block btn-lg btn-primary text-uppercase" type="submit"><?php echo $string['form']['submit']; ?></button>
-                                        </div>
-                                    </div>
-                                </form>
+                            <div class="col-sm-10 col-sm-offset-1">
+								<h3><?php echo $string['footer']['privacy']['text']; ?></h3>
+                               <?php include_once('terms-ar.php'); ?>
 
                             </div>
                         </div>
                     </section>
 
-                    <footer class="footer text-center">
-                        <p>
-                            <a href="<?php echo $string['footer']['privacy']['url']; ?>" title="<?php echo $string['footer']['privacy']['text']; ?>" target="_blank">
-                                <?php echo $string['footer']['privacy']['text']; ?>
-                            </a>
-                        </p>
-                    </footer>
                     <?php endforeach; ?>
-
                 </div>
             </div>
         </div>
