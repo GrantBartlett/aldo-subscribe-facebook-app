@@ -96,13 +96,17 @@
                                     </div>
                                 </form>
 
+	                            <div class="hidden ar_terms">
+	                            <?php include_once('terms-ar.php'); ?>
+								</div>
+
                             </div>
                         </div>
                     </section>
 
                     <footer class="footer text-center">
                         <p>
-                            <a href="<?php echo $string['footer']['privacy']['url']; ?>" title="<?php echo $string['footer']['privacy']['text']; ?>" target="_blank">
+                            <a href="<?php echo $string['footer']['privacy']['url']; ?>" title="<?php echo $string['footer']['privacy']['text']; ?>" target="_blank" class="<?php echo $string['footer']['privacy']['class']; ?>">
                                 <?php echo $string['footer']['privacy']['text']; ?>
                             </a>
                         </p>

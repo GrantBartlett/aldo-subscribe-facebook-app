@@ -15,7 +15,8 @@
       "footer": {
         "privacy": {
           "text": "Privacy Policy",
-          "url": "http://www.aldoshoes.com/ca/en/privacyPolicy"
+          "url": "http://www.aldoshoes.com/ca/en/privacyPolicy",
+          "class": ""
         }
       }
     }
@@ -36,7 +37,8 @@
       "footer": {
         "privacy": {
           "text": "نهج الخصوصية",
-          "url": "terms/"
+          "url": "http://www.aldoshoes.com/ca/en/privacyPolicy",
+          "class" : "show_ar_terms"
         }
       }
     }
