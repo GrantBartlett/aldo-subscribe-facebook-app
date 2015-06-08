@@ -1,4 +1,4 @@
-<div class="pull-right btn btn-primary close_ar_terms" style="padding: 5px;line-height: 15px;">X</div>
+<div class="pull-left btn btn-primary close_ar_terms" style="padding: 5px;line-height: 15px;">X</div>
 
 <h3>السياسة الخصوصية - التزامنا بالخصوصية</h3>
 
