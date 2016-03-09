@@ -3,7 +3,7 @@
 class Language {
 
 	/**
-	 *
+	 * Set Language
 	 */
 	public function setLanguage() {
 
@@ -20,6 +20,7 @@ class Language {
 	}
 
 	/**
+	 * Get Language
 	 * @return string
 	 */
 	public function getLanguage() {

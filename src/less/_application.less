@@ -1,0 +1,181 @@
+html, body {
+  background: #67649a url('../images/bg.png') no-repeat;
+  background-position: 60% 50%;
+  letter-spacing: 0.07em;
+}
+
+.app {
+  padding: 50px 0 50px 0;
+
+  .main {
+    background: @brand-white;
+    padding: 15px;
+    width: 450px;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  p {
+    margin: 0 0 20px;
+  }
+
+  p.description {
+    font-size: 17px;
+    color: @brand-secondary;
+  }
+
+  .logo {
+    background: @brand-white;
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+
+  .intro {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    h1 {
+      font-size: 42px;
+      letter-spacing: 0.05em;
+    }
+  }
+
+  .headline {
+    padding: 50px 20px;
+    h1 {
+      font-size: 70px;
+      letter-spacing: 6px;
+      color: @brand-white;
+    }
+  }
+
+  .form {
+    background: @brand-white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    button {
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+  }
+
+  footer {
+    font-family: @font-family-secondary;
+    color: @brand-secondary;
+    font-size: 10px;
+    letter-spacing: 0.05em;
+    line-height: 18px;
+
+    a {
+      color: lighten(@brand-secondary, 50%);
+      &:hover {
+        text-decoration: none;
+        color: @brand-primary;
+      }
+    }
+  }
+
+  // Aldo email animation
+  .spin {
+    -webkit-animation: spin 15s linear infinite;
+    -moz-animation: spin 15s linear infinite;
+    animation: spin 15s linear infinite;
+  }
+
+  .email-icon {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+  }
+
+  .still {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+
+  @-moz-keyframes spin {
+    100% {
+      -moz-transform: rotate(360deg);
+    }
+  }
+
+  @-webkit-keyframes spin {
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+
+  @keyframes spin {
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+}
+
+.form-control {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  text-align: center;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+}
+
+.rtl .app {
+  letter-spacing: normal;
+}
+
+.rtl {
+  direction: rtl;
+
+  // Firstname field needs to come first
+  .first-name {
+    float: right;
+  }
+  .last-name {
+    float: left;
+  }
+
+  .app {
+    .intro {
+      h1 {
+        letter-spacing: normal;
+      }
+    }
+  }
+}
+
+.modal-body {
+  font-family: @font-family-secondary;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) {
+  html, body {
+    background-position: 70% 50%;
+    letter-spacing: 0.07em;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) {
+  html, body {
+    background-position: center;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) {
+
+}
