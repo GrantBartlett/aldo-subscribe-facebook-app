@@ -14,3 +14,7 @@ Run in the command line:
 ## License
 
 MIT
+
+## Previews
+![Preview of app](https://cloud.githubusercontent.com/assets/6104940/15298803/22241cf6-1b99-11e6-9d10-ee7f11924ccf.png)
+![Preview of app](https://cloud.githubusercontent.com/assets/6104940/15298804/22244ed8-1b99-11e6-9a4b-8cd58f1c4965.png)
